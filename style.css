@@ -996,3 +996,105 @@ ul {
     }
 
 }
+/* ==================== HAMBURGER MENU (PURE CSS) ==================== */
+.menu-toggle {
+    display: none !important;
+}
+
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Screens Styling */
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: flex; /* Hamburger Icon mobile par show hoga */
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #172a35;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+        border-bottom: 1px solid #233b49;
+    }
+
+    /* Checkbox Click hone par Menu Open hoga */
+    .menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+}
+
+
+/* ==================== RESPONSIVE FOOTER ==================== */
+.site-footer {
+    background-color: #0d171d;
+    color: #94a3b8;
+    padding: 50px 20px 20px 20px;
+    border-top: 1px solid #233b49;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #d97757; /* Accent Color */
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #1a2e3b;
+    font-size: 0.85rem;
+}

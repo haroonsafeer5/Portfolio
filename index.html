@@ -12,31 +12,34 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+   <!-- ==================== HEADER ==================== -->
+<header class="header">
+    <div class="container nav-container">
 
-    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>Haroon Safeer</span>
+        </a>
 
-        <div class="container nav-container">
+        <!-- HAMBURGER MENU BUTTON (YAHAN ADD KIYA HAI) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-            <a href="#home" class="logo">
-                <span class="logo-mark">&lt;/&gt;</span>
-                <span>Haroon Safeer</span>
-            </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-            <nav class="navbar">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-        </div>
-
-    </header>
+    </div>
+</header>
 
 
     <!-- ================= MAIN ================= -->
@@ -689,26 +692,39 @@
 </section>
 
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <p>
-                © 2026 Haroon Safeer. All Rights Reserved.
-            </p>
-
-
-            <p>
-                Designed & Built with HTML & CSS
-            </p>
-
+    <!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Brand & Bio -->
+        <div class="footer-col">
+            <h3>Haroon Safeer</h3>
+            <p>Software Engineering Student at University of Haripur passionate about building modern web experiences.</p>
         </div>
 
-    </footer>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
+        <!-- Column 3: Connect / Social -->
+        <div class="footer-col">
+            <h4>Connect</h4>
+            <div class="footer-socials">
+                <a href="https://github.com/haroonsafeer5" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
 
-</body>
-
-</html>
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Haroon Safeer. All Rights Reserved.</p>
+    </div>
+</footer>
