@@ -535,159 +535,66 @@
 
 
 
-        <!-- ================= CONTACT SECTION ================= -->
+  <!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <p class="section-tagline">GET IN TOUCH</p>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Feel free to get in touch with me for projects, collaboration or any questions.</p>
 
-        <section id="contact" class="section contact-section">
-
-            <div class="container">
-
-
-                <div class="section-heading contact-heading">
-
-                    <p class="section-label">
-                        GET IN TOUCH
-                    </p>
-
-
-                    <h2>
-                        Contact Me
-                    </h2>
-
-
-                    <p>
-
-                        Feel free to get in touch with me for
-                        projects, collaboration or any questions.
-
-                    </p>
-
+        <!-- Top Contact Cards -->
+        <div class="contact-cards-grid">
+            <div class="contact-card">
+                <div class="card-icon">📧</div>
+                <div class="card-info">
+                    <span class="card-label">EMAIL</span>
+                    <p>haroon.safeer@email.com</p>
                 </div>
+            </div>
 
-
-                <div class="contact-box">
-
-
-                    <!-- EMAIL -->
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            ✉
-                        </div>
-
-
-                        <div class="contact-info">
-
-                            <span>
-                                Email
-                            </span>
-
-                            <p>
-                                haroon.safeer@email.com
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- PHONE -->
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            ☎
-                        </div>
-
-
-                        <div class="contact-info">
-
-                            <span>
-                                Phone
-                            </span>
-
-                            <p>
-                                +92 344 9161839
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- LOCATION -->
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            ⌖
-                        </div>
-
-
-                        <div class="contact-info">
-
-                            <span>
-                                Location
-                            </span>
-
-                            <p>
-                                Haripur, Pakistan
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- UNIVERSITY -->
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            🎓
-                        </div>
-
-
-                        <div class="contact-info">
-
-                            <span>
-                                University
-                            </span>
-
-                            <p>
-                                University of Haripur
-                            </p>
-
-                        </div>
-
-                    </div>
-
+            <div class="contact-card">
+                <div class="card-icon">📞</div>
+                <div class="card-info">
+                    <span class="card-label">PHONE</span>
+                    <p>+92 344 9161839</p>
                 </div>
-
             </div>
 
-        </section>
-
-    </main>
-
-        </div> 
-
-        <form action="https://formspree.io/f/mdekwvzg" method="POST" class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <div class="contact-card">
+                <div class="card-icon">📍</div>
+                <div class="card-info">
+                    <span class="card-label">LOCATION</span>
+                    <p>Haripur, Pakistan</p>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
 
+            <div class="contact-card">
+                <div class="card-icon">🎓</div>
+                <div class="card-info">
+                    <span class="card-label">UNIVERSITY</span>
+                    <p>University of Haripur</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Styled Contact Form Box -->
+        <div class="contact-form-container">
+            <form action="https://formspree.io/f/xbldqwwq" method="POST" class="styled-contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </div>
 </section>
 

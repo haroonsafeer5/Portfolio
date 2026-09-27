@@ -1098,3 +1098,138 @@ ul {
     border-top: 1px solid #1a2e3b;
     font-size: 0.85rem;
 }
+/* ==================== CONTACT SECTION STYLING ==================== */
+.contact-section {
+    background-color: #0d171d;
+    padding: 60px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-tagline {
+    color: #d97757;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+/* Cards Grid */
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.contact-card {
+    background-color: #172a35;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #233b49;
+    text-align: left;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    background-color: #233b49;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.card-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+.contact-card p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Styled Form Box */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #172a35;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #233b49;
+}
+
+.styled-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #0d171d;
+    border: 1px solid #233b49;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d97757;
+}
+
+.submit-btn {
+    background-color: #d97757;
+    color: #ffffff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #c06345;
+}
