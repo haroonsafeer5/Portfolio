@@ -996,26 +996,40 @@ ul {
     }
 
 }
-/* ==================== HAMBURGER MENU (PURE CSS) ==================== */
-.menu-toggle {
-    display: none !important;
-}
+/* ==================== HAMBURGER RIGHT ALIGNMENT FIX ==================== */
+@media (max-width: 768px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between; /* Logo Left par aur Hamburger Right par set hoga */
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
 
-.hamburger-btn {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 28px;
-    height: 20px;
-    cursor: pointer;
-}
+    .hamburger-btn {
+        display: flex !important;
+        margin-left: auto; /* Hamburger Icon ko right side push karega */
+        cursor: pointer;
+    }
 
-.hamburger-btn span {
-    height: 3px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 3px;
-    transition: all 0.3s ease;
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0d171d;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+        border-bottom: 1px solid #233b49;
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
 }
 
 /* Mobile Screens Styling */
